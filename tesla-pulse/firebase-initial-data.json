@@ -1,0 +1,192 @@
+{
+  "poles": {
+    "pole_rajwada_01": {
+      "meta": {
+        "name": "Pole 01 - Main Line",
+        "location": {
+          "lat": 22.7176,
+          "lng": 75.8577
+        },
+        "installedOn": "2026-01-15",
+        "status": "online",
+        "area": "Rajwada"
+      },
+      "live": {
+        "leakageCurrent_mA": 12.4,
+        "loadCurrent_A": 3.8,
+        "voltage_V": 228.5,
+        "moisture_percent": 45,
+        "faultDetected": false,
+        "deviceTemp_C": 32,
+        "batteryLevel_percent": 87,
+        "signalStrength": -65,
+        "lastUpdated": 1735660800000
+      }
+    },
+    "pole_rajwada_02": {
+      "meta": {
+        "name": "Pole 02 - Distribution",
+        "location": {
+          "lat": 22.718,
+          "lng": 75.8578
+        },
+        "installedOn": "2026-01-20",
+        "status": "online",
+        "area": "Rajwada"
+      },
+      "live": {
+        "leakageCurrent_mA": 13.2,
+        "loadCurrent_A": 4.1,
+        "voltage_V": 230.2,
+        "moisture_percent": 42,
+        "faultDetected": false,
+        "deviceTemp_C": 34,
+        "batteryLevel_percent": 85,
+        "signalStrength": -68,
+        "lastUpdated": 1735660800000
+      }
+    },
+    "pole_vijaynagar_01": {
+      "meta": {
+        "name": "Pole 01 - VN Square",
+        "location": {
+          "lat": 22.7533,
+          "lng": 75.8937
+        },
+        "installedOn": "2025-11-10",
+        "status": "offline",
+        "area": "Vijaynagar"
+      }
+    },
+    "pole_vijaynagar_02": {
+      "meta": {
+        "name": "Pole 02 - AB Road",
+        "location": {
+          "lat": 22.754,
+          "lng": 75.8945
+        },
+        "installedOn": "2025-11-12",
+        "status": "offline",
+        "area": "Vijaynagar"
+      }
+    },
+    "pole_vijaynagar_03": {
+      "meta": {
+        "name": "Pole 03 - Bhanwarkuan",
+        "location": {
+          "lat": 22.752,
+          "lng": 75.892
+        },
+        "installedOn": "2025-11-15",
+        "status": "offline",
+        "area": "Vijaynagar"
+      }
+    },
+    "pole_airport_01": {
+      "meta": {
+        "name": "Pole 01 - Terminal Gate",
+        "location": {
+          "lat": 22.7217,
+          "lng": 75.8011
+        },
+        "installedOn": "2025-12-01",
+        "status": "offline",
+        "area": "Airport"
+      }
+    },
+    "pole_airport_02": {
+      "meta": {
+        "name": "Pole 02 - Parking Area",
+        "location": {
+          "lat": 22.7225,
+          "lng": 75.802
+        },
+        "installedOn": "2025-12-05",
+        "status": "offline",
+        "area": "Airport"
+      }
+    }
+  },
+
+  "maintenance_logs": {
+    "maint_001": {
+      "id": "maint_001",
+      "poleId": "pole_rajwada_01",
+      "poleName": "Pole 01 - Main Line",
+      "lastMaintenanceDate": 1746144000000,
+      "nextDueDate": 1754236800000,
+      "status": "overdue",
+      "assignedTechnician": "Ravi Sharma",
+      "notes": "Routine 90-day inspection is overdue. Sensor housing showed minor corrosion at last visit — check moisture seal and terminal connectors.",
+      "priority": "high"
+    },
+    "maint_002": {
+      "id": "maint_002",
+      "poleId": "pole_rajwada_02",
+      "poleName": "Pole 02 - Distribution",
+      "lastMaintenanceDate": 1749772800000,
+      "nextDueDate": 1757692800000,
+      "status": "due-soon",
+      "assignedTechnician": "Priya Patel",
+      "notes": "Scheduled 90-day inspection due in 8 days. Verify ACS712 calibration and clean terminal connectors. Battery at 85% — check solar trickle charge.",
+      "priority": "medium"
+    },
+    "maint_003": {
+      "id": "maint_003",
+      "poleId": "pole_vijaynagar_01",
+      "poleName": "Pole 01 - VN Square",
+      "lastMaintenanceDate": 1754668800000,
+      "nextDueDate": 1762531200000,
+      "status": "completed",
+      "assignedTechnician": "Arjun Mehta",
+      "notes": "Full inspection completed. Replaced moisture sensor capacitor — previous reading was drifting +8%. Battery restored to 92%. No anomalies found in wiring conduit.",
+      "priority": "low",
+      "completedBy": "Arjun Mehta",
+      "completedAt": 1754755200000
+    },
+    "maint_004": {
+      "id": "maint_004",
+      "poleId": "pole_vijaynagar_02",
+      "poleName": "Pole 02 - AB Road",
+      "lastMaintenanceDate": 1746748800000,
+      "nextDueDate": 1754841600000,
+      "status": "overdue",
+      "assignedTechnician": "Ravi Sharma",
+      "notes": "Pole has been offline for extended period. Inspect ESP32 unit, check 5V power supply regulator, and verify WiFi antenna connection. Possible water ingress at base.",
+      "priority": "high"
+    },
+    "maint_005": {
+      "id": "maint_005",
+      "poleId": "pole_vijaynagar_03",
+      "poleName": "Pole 03 - Bhanwarkuan",
+      "lastMaintenanceDate": 1754323200000,
+      "nextDueDate": 1762358400000,
+      "status": "scheduled",
+      "assignedTechnician": "Neha Joshi",
+      "notes": "Quarterly inspection scheduled for end of month. Check ZMCT101B calibration against reference clamp meter. Inspect wiring conduit seals for monsoon water ingress.",
+      "priority": "medium"
+    },
+    "maint_006": {
+      "id": "maint_006",
+      "poleId": "pole_airport_01",
+      "poleName": "Pole 01 - Terminal Gate",
+      "lastMaintenanceDate": 1748044800000,
+      "nextDueDate": 1755388800000,
+      "status": "overdue",
+      "assignedTechnician": "Priya Patel",
+      "notes": "Airport security clearance required before site visit — coordinate with terminal management 48 hrs in advance. Pole offline, suspected ESP32 firmware crash. High priority.",
+      "priority": "high"
+    },
+    "maint_007": {
+      "id": "maint_007",
+      "poleId": "pole_airport_02",
+      "poleName": "Pole 02 - Parking Area",
+      "lastMaintenanceDate": 1754928000000,
+      "nextDueDate": 1764777600000,
+      "status": "scheduled",
+      "assignedTechnician": "Arjun Mehta",
+      "notes": "Post-monsoon inspection scheduled for November. Verify drainage channel around pole base, clean solar panel surface, check battery float voltage.",
+      "priority": "low"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+// =============================================================================
+// LOCAL EMULATOR TESTING ONLY — NOT FOR PRODUCTION
+// =============================================================================
+// These rules allow all reads and writes so the Firestore emulator can run
+// without a locked-down ruleset. Do not deploy this file to a production
+// Firebase project. Replace with least-privilege rules before any deploy.
+// =============================================================================
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
