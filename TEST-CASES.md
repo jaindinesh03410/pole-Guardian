@@ -368,8 +368,8 @@ Console output:
 **Expected Result:**
 ```
 Terminal output:
-✅ Message sent to 7406813951
-✅ Message sent to 5977830059
+✅ Message sent to CHAT_ID_1
+✅ Message sent to CHAT_ID_2
 
 Telegram app:
 Test message received from bot

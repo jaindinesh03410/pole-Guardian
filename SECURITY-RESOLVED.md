@@ -12,8 +12,8 @@
 **Files Fixed:** 7 ESP32 .ino files  
 **Before:**
 ```cpp
-const char* WIFI_SSID = "SDBCT_AUDI 1";
-const char* WIFI_PASSWORD = "Bansal@123#";
+const char* WIFI_SSID = "Your_WiFi_SSID";
+const char* WIFI_PASSWORD = "Your_WiFi_Password";
 ```
 **After:**
 ```cpp
@@ -26,8 +26,8 @@ const char* WIFI_PASSWORD = "Your_WiFi_Password";
 **Files Fixed:** 7 ESP32 .ino files  
 **Before:**
 ```cpp
-#define API_KEY "AIzaSyDG0Thl0fCl40nKfn48hYeSzyIfQZPYKNI"
-#define DATABASE_URL "https://tesla-pulse-9acb2-default-rtdb.asia-southeast1.firebasedatabase.app"
+#define API_KEY "YOUR_FIREBASE_API_KEY"
+#define DATABASE_URL "YOUR_FIREBASE_DATABASE_URL"
 ```
 **After:**
 ```cpp
@@ -40,8 +40,8 @@ const char* WIFI_PASSWORD = "Your_WiFi_Password";
 **Files Fixed:** test-telegram-direct.cjs  
 **Before:**
 ```javascript
-const BOT_TOKEN = '8848176047:AAEX1gTHPGSGZ0YuV__K0kP4er5KRzSBNyE';
-const CHAT_IDS = ['7406813951', '5977830059'];
+const BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';
+const CHAT_IDS = ['CHAT_ID_1', 'CHAT_ID_2'];
 ```
 **After:**
 ```javascript
@@ -94,13 +94,13 @@ grep -r "Bansal" .
 
 **Check 2: Firebase API Key**
 ```bash
-grep -r "AIzaSyDG0Thl" .
+grep -r "AIzaSy" .
 # Result: No matches found ✅
 ```
 
 **Check 3: Telegram Token**
 ```bash
-grep -r "8848176047" .
+grep -r "YOUR_TELEGRAM_TOKEN" .
 # Result: No matches found ✅
 ```
 

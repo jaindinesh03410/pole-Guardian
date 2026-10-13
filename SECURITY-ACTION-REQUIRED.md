@@ -9,7 +9,7 @@
 ## 🔐 Leaked Secrets That Need Action
 
 ### 1. ✅ Firebase API Key (EXPOSED)
-**What was leaked:** `AIzaSyDG0Thl0fCl40nKfn48hYeSzyIfQZPYKNI`
+**What was leaked:** Firebase API credentials
 
 **Action Required:**
 1. Go to: https://console.firebase.google.com/project/tesla-pulse-9acb2/settings/general/
@@ -24,7 +24,7 @@
 ---
 
 ### 2. 🔴 WiFi Password (EXPOSED)
-**What was leaked:** `SDBCT_AUDI 1` / `Bansal@123#`
+**What was leaked:** WiFi credentials
 
 **Action Required:**
 1. **Change WiFi password** from router settings
@@ -36,7 +36,7 @@
 ---
 
 ### 3. 🔴 Telegram Bot Token (EXPOSED)
-**What was leaked:** `8848176047:AAEX1gTHPGSGZ0YuV__K0kP4er5KRzSBNyE`
+**What was leaked:** Telegram bot credentials
 
 **Action Required:**
 1. Open Telegram → Search for **@BotFather**
@@ -52,7 +52,7 @@
 ---
 
 ### 4. 🔴 Telegram Chat IDs (EXPOSED)
-**What was leaked:** `7406813951`, `5977830059`
+**What was leaked:** Telegram recipient IDs
 
 **Action:** No action needed - Chat IDs are not sensitive
 **Risk:** Low - These are just recipient identifiers
@@ -138,7 +138,7 @@
 ### 1. Test Telegram Bot:
 ```bash
 # Try sending message with OLD token (should fail)
-curl "https://api.telegram.org/bot8848176047:AAEX1gTHPGSGZ0YuV__K0kP4er5KRzSBNyE/getMe"
+curl "https://api.telegram.org/bot<OLD_TOKEN>/getMe"
 # Expected: {"ok":false,"error_code":401}
 ```
 

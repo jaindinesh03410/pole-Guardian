@@ -124,7 +124,7 @@
 ## 📱 Telegram Setup
 
 **Bot Token:** Already configured in `.env`  
-**Chat IDs:** 7406813951, 5977830059
+**Chat IDs:** Configured in environment variables
 
 Test telegram:
 ```bash
