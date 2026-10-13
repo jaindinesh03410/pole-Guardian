@@ -450,7 +450,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For issues and questions:
 - **GitHub Issues:** [Create Issue](https://github.com/jaindinesh03410/pole-Guardian/issues)
 - **Documentation:** See `docs/` folder
-- **Email:** support@teslapulse.com (if applicable)
+- **Email:** jsanyam015@gmail.com
 
 ---
 
