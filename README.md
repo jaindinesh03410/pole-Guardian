@@ -9,7 +9,8 @@ A comprehensive IoT-based real-time monitoring and protection system for electri
 ---
 
 ## 🌟 Overview
-
+- **Problem** Traditional urban waterlogging, street-level flooding, and electrical distribution poles face critical blind spots during heavy rains and monsoon seasons. When water accumulates around utility poles, it creates invisible hazards-such as submerged junction boxes or current leakage-posing severe electrocution risks to pedestrians and stray animals, while simultaneously causing structural tilting and sudden power grid failures due to a lack of real-time monitoring.
+  
 Tesla Pulse is an intelligent electric pole monitoring system that provides:
 - **Real-time monitoring** of current leakage, voltage, and moisture
 - **Automated protection** with relay-based circuit breakers
